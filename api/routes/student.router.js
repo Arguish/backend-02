@@ -6,17 +6,23 @@ const {
   getAllStudent,
   updateStudent,
   deleteStudent,
+  addContactInfo,
+  createAndSetContact,
 } = require("../controllers/student.controller.js");
 //
-
-router.get("/", getAllStudent);
-
+//C
 router.post("/", createStudent);
+router.post("/:id/contact", addContactInfo);
+router.post("/:studentId/contact/create", createAndSetContact);
 
+//R
+router.get("/", getAllStudent);
 router.get("/:id", getStudent);
 
+//U
 router.put("/:id", updateStudent);
 
+//D
 router.delete("/:id", deleteStudent);
 
 module.exports = router;

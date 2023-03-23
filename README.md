@@ -41,20 +41,8 @@
 - 9 Con las rutas del CRUD creadas en el router, pasamos a crear el controlador
 - 10 Implementar el resto de routers y controllers
 - 11 En la carpeta db se establecen las relaciones entre tablas
-- 12 Me perdi en las relaciones, creo que hay que añadir en las peticiones los datos extras
-- 13 Lazy loading?
+- 12 Una vez establecidas las relaciones se crean metodos nuevos, GET/SET, lo que nos da acceso a funciones para obtener datos relacionados, tales como `getContact()` o `setContact(contact)`
+- 13 De vuelta en el router, ahora creamos los metodos para poder hacer `Eager Loading` o `Lazy Loading`, dado que hemos añadido relaciones entre las tablas, podemos querer toda la info relacionada o solo la que pidamos, esot son estos meotodos de loading respectivamente.
+- 14 Con los metodos ya creados en el router, creamos las funciones necesarias para estos metodos en el controlador
 
 ---
-
-## Capturas Salvajes
-
-![](/Screenshot%20from%202023-03-23%2013-41-12.png)
-![](/Screenshot%20from%202023-03-23%2013-41-20.png)
-![](/Screenshot%20from%202023-03-23%2013-41-31.png)
-![](/Screenshot%20from%202023-03-23%2014-19-48.png)
-![](/Screenshot%20from%202023-03-23%2014-36-14.png)
-![](/Screenshot%20from%202023-03-23%2014-41-13.png)
-![](/Screenshot%20from%202023-03-23%2014-42-44.png)
-![](/Screenshot%20from%202023-03-23%2014-49-07.png)
-![](/Screenshot%20from%202023-03-23%2014-52-09.png)
-![](/Screenshot%20from%202023-03-23%2015-02-04.png)

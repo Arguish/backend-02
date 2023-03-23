@@ -22,12 +22,12 @@ const getStudent = async (req, res) => {
       },
     });
 
-    const contact = await student.getContact();
+    const contact = await result.getContact();
 
     if (!result) {
       res.status(404).send("Student not found");
     }
-    res.status(200).json(result, contact);
+    res.status(200).json({ student: result, contact: contact });
   } catch (error) {
     res.status(500).json(error);
   }
@@ -76,8 +76,33 @@ const deleteStudent = async (req, res) => {
     res.status(500).json(error);
   }
 };
+//
 
-async function createAndSetContact(req, res) {}
+const addContactInfo = async (req, res) => {
+  try {
+    const student = await Student.findByPk(req.params.studentId);
+    const contact = await Contact.findByPk(req.body.contactId);
+
+    await student.setContact(contact);
+
+    return res.send("Contact Info added");
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+};
+
+//
+const createAndSetContact = async (req, res) => {
+  try {
+    const student = await Student.findByPk(req.params.id);
+
+    await student.createContact(req.body);
+
+    return res.send("Contact Created and Added");
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+};
 
 module.exports = {
   createStudent,
@@ -85,4 +110,6 @@ module.exports = {
   getAllStudent,
   updateStudent,
   deleteStudent,
+  addContactInfo,
+  createAndSetContact,
 };
