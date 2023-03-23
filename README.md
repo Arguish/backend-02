@@ -3,6 +3,9 @@
 ## Estructura DB
 
 ![](/Screenshot%20from%202023-03-23%2009-46-31.png)
+![](/Screenshot%20from%202023-03-23%2013-41-12.png)
+![](/Screenshot%20from%202023-03-23%2013-41-20.png)
+![](/Screenshot%20from%202023-03-23%2013-41-31.png)
 
 ---
 
@@ -35,6 +38,7 @@
 - 7 Si todo esta ok, las tablas se habran creado en la base de datos (ojo, el force:true machaca la tabla entera, hay que quitarlo de cara a la version final)
 - 8 Ahora hay que empezar a crear las rutas que se vana requerir con EXPRESS, creamos un nodo general `/api` desde el que redireccionaremos todo lo demas
 - 9 Con las rutas del CRUD creadas en el router, pasamos a crear el controlador
-- 10
+- 10 implementar el resto de routers y controllers
+- 11 en la carpeta db se establecen las relaciones entre tablas
 
 ---
