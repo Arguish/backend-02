@@ -23,7 +23,7 @@ async function checkConnection() {
 
 async function syncModels() {
   try {
-    await sequelize.sync({ force: false });
+    await sequelize.sync({ force: false, alter: true });
     console.log("MOD OK! ^u^");
   } catch (error) {
     throw error;

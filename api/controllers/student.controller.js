@@ -1,4 +1,5 @@
 const { Student } = require("../models/student.model");
+const { Contact } = require("../models/contact.model");
 
 const createStudent = async (req, res) => {
   try {
@@ -20,10 +21,13 @@ const getStudent = async (req, res) => {
         id: req.params.id,
       },
     });
+
+    const contact = await student.getContact();
+
     if (!result) {
       res.status(404).send("Student not found");
     }
-    res.status(200).json(result);
+    res.status(200).json(result, contact);
   } catch (error) {
     res.status(500).json(error);
   }
@@ -72,6 +76,8 @@ const deleteStudent = async (req, res) => {
     res.status(500).json(error);
   }
 };
+
+async function createAndSetContact(req, res) {}
 
 module.exports = {
   createStudent,

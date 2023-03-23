@@ -35,8 +35,10 @@
 - 7 Si todo esta ok, las tablas se habran creado en la base de datos (ojo, el force:true machaca la tabla entera, hay que quitarlo de cara a la version final)
 - 8 Ahora hay que empezar a crear las rutas que se vana requerir con EXPRESS, creamos un nodo general `/api` desde el que redireccionaremos todo lo demas
 - 9 Con las rutas del CRUD creadas en el router, pasamos a crear el controlador
-- 10 implementar el resto de routers y controllers
-- 11 en la carpeta db se establecen las relaciones entre tablas
+- 10 Implementar el resto de routers y controllers
+- 11 En la carpeta db se establecen las relaciones entre tablas
+- 12 Me perdi en las relaciones, creo que hay que añadir en las peticiones los datos extras
+- 13 Lazy loading?
 
 ---
 
@@ -45,3 +47,10 @@
 ![](/Screenshot%20from%202023-03-23%2013-41-12.png)
 ![](/Screenshot%20from%202023-03-23%2013-41-20.png)
 ![](/Screenshot%20from%202023-03-23%2013-41-31.png)
+![](/Screenshot%20from%202023-03-23%2014-19-48.png)
+![](/Screenshot%20from%202023-03-23%2014-36-14.png)
+![](/Screenshot%20from%202023-03-23%2014-41-13.png)
+![](/Screenshot%20from%202023-03-23%2014-42-44.png)
+![](/Screenshot%20from%202023-03-23%2014-49-07.png)
+![](/Screenshot%20from%202023-03-23%2014-52-09.png)
+![](/Screenshot%20from%202023-03-23%2015-02-04.png)

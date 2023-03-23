@@ -1,4 +1,4 @@
-const { Teacher } = require("../models/Teacher.model");
+const { Teacher } = require("../models/teacher.model");
 
 const createTeacher = async (req, res) => {
   try {
