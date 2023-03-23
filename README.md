@@ -3,9 +3,6 @@
 ## Estructura DB
 
 ![](/Screenshot%20from%202023-03-23%2009-46-31.png)
-![](/Screenshot%20from%202023-03-23%2013-41-12.png)
-![](/Screenshot%20from%202023-03-23%2013-41-20.png)
-![](/Screenshot%20from%202023-03-23%2013-41-31.png)
 
 ---
 
@@ -42,3 +39,9 @@
 - 11 en la carpeta db se establecen las relaciones entre tablas
 
 ---
+
+## Capturas Salvajes
+
+![](/Screenshot%20from%202023-03-23%2013-41-12.png)
+![](/Screenshot%20from%202023-03-23%2013-41-20.png)
+![](/Screenshot%20from%202023-03-23%2013-41-31.png)
