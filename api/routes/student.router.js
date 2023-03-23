@@ -13,7 +13,7 @@ const {
 //C
 router.post("/", createStudent);
 router.post("/:id/contact", addContactInfo);
-router.post("/:studentId/contact/create", createAndSetContact);
+router.post("/:id/contact/create", createAndSetContact);
 
 //R
 router.get("/", getAllStudent);
