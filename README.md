@@ -34,6 +34,7 @@
 - 6 Creamos un grupo de relaciones en DB y syncronizamos en el index
 - 7 Si todo esta ok, las tablas se habran creado en la base de datos (ojo, el force:true machaca la tabla entera, hay que quitarlo de cara a la version final)
 - 8 Ahora hay que empezar a crear las rutas que se vana requerir con EXPRESS, creamos un nodo general `/api` desde el que redireccionaremos todo lo demas
-- 9
+- 9 Con las rutas del CRUD creadas en el router, pasamos a crear el controlador
+- 10
 
 ---

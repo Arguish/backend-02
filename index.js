@@ -13,6 +13,7 @@ async function startDB() {
 function startExpress() {
   const api = express()
     .use(morgan("dev"))
+    .use(express.json())
     .use("/api", require("./api/routes/routIndex"))
     .listen(process.env.PORTAPI, () => {
       console.log(`LIS OK ^-^ :${process.env.PORTAPI}`);
