@@ -8,6 +8,7 @@ const sequelize = new Sequelize(
     host: process.env.HOST,
     dialect: process.env.DIALECT,
     port: process.env.PORTDB,
+    logging: false,
   }
 );
 
@@ -20,4 +21,13 @@ async function checkConnection() {
   }
 }
 
-module.exports = { sequelize, checkConnection };
+async function syncModels() {
+  try {
+    await sequelize.sync({ force: true });
+    console.log("MOD OK! ^u^");
+  } catch (error) {
+    throw error;
+  }
+}
+
+module.exports = { sequelize, checkConnection, syncModels };
