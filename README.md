@@ -28,6 +28,7 @@
 - npm i sequelize
 - npm i mysql2
 - npm i bcrypt
+- npm i jsonwebtoken
 
 ---
 
