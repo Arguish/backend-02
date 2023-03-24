@@ -23,5 +23,4 @@ const Student = sequelize.define("student", {
   },
 });
 
-//
 module.exports = { Student };

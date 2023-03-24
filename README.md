@@ -1,5 +1,7 @@
 # backend-02
 
+![](</Untitled(3).png>)
+
 ## Estructura DB
 
 ![](/Screenshot%20from%202023-03-23%2009-46-31.png)
